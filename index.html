@@ -13,6 +13,7 @@
     <div class="container">
 
       <section class="site-header__top header-top">
+        <h2 class="visually-hidden">call as</h2>
         <ul class="header-top__list">
           <li class="header-top__item"><a class="header-top__address" href="#">Chat with us</a></li>
           <li class="header-top__item"><a class="header-top__address" href="tell:+420336775664">+420 336 775 664</a></li>
@@ -26,8 +27,61 @@
         </ul>
       </section>
 
+      <section class="site-header__main header-main">
+        <h2 class="visually-hidden">call as</h2>
+        <a class="header-main__logo-link" href="#"><img class="header-main__logo" src="/img/icon/site-logo.svg" alt="logo" width="177" height="18"></a>
+
+        <form class="header-main__form" action="https://echo.htmlacademy.ru" method="POST">        
+          
+          <select class="header-main__selection" name="select" id="select">
+            <option value="" disabled selected>All categories</option>
+            <option value="bakery">Bakery</option>
+            <option value="fruit">Fruit</option>
+            <option value="meat">Meat</option>
+            <option value="fish">Fish</option>
+            <option value="drinks">Drinks</option>
+            <option value="kitchen">Kitchen</option>
+          </select>
+
+          <input class="header-main__search" type="text" name="search_products" id="search" placeholder="Search Products, categories ...">
+
+          <button class="header-main__submit" type="submit"></button>
+
+        </form>
+
+        <div class="header-main__link-wrap">
+          <button class="header-main__search-modal"></button>
+          <a class="header-main__link header-main__link--user" href="#"></a>
+          <a class="header-main__link header-main__link--track" href="#">
+            <span class="header-main__link-counter">1</span>
+          </a>
+          <button class="header-main__burger"></button>
+        </div>
+      </section>
+
     </div>
   </header>
 
+
+  <section class="search-modal">
+      <form class="search-modal__form" action="https://echo.htmlacademy.ru" method="POST">        
+          
+        <select class="search-modal__selection" name="select" id="select">
+          <option value="" disabled selected>All categories</option>
+          <option value="bakery">Bakery</option>
+          <option value="fruit">Fruit</option>
+          <option value="meat">Meat</option>
+          <option value="fish">Fish</option>
+          <option value="drinks">Drinks</option>
+          <option value="kitchen">Kitchen</option>
+        </select>
+
+        <input class="search-modal__search" type="text" name="search_products" id="search" placeholder="Search Products, categories ...">
+
+        <button class="search-modal__submit" type="submit"></button>
+
+      </form>
+  </section>
+  <script src="/js/main.js"></script>
 </body>
 </html>
