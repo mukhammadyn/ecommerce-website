@@ -50,37 +50,122 @@
         </form>
 
         <div class="header-main__link-wrap">
-          <button class="header-main__search-modal"></button>
+          <button class="header-main__search-modal js-header-search-btn"></button>
           <a class="header-main__link header-main__link--user" href="#"></a>
           <a class="header-main__link header-main__link--track" href="#">
             <span class="header-main__link-counter">1</span>
           </a>
-          <button class="header-main__burger"></button>
+          <button class="header-main__burger js-nav-btn"></button>
         </div>
       </section>
+
+      <nav class="site-header__nav site-nav">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Bakery</a>
+            <ul class="site-nav__drop-menu">
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test1 test1 test1 test1 test1 test1</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test2</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test3</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test4</a></li>
+            </ul>
+          </li>
+
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Fruit and vegetables</a>
+            <ul class="site-nav__drop-menu">
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test1</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test2</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test3</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test4</a></li>
+            </ul>
+          </li>
+
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Meat and fish</a>
+            <ul class="site-nav__drop-menu">
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test1</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test2</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test3</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test4</a></li>
+            </ul>
+          </li>
+
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Drinks</a>
+            <ul class="site-nav__drop-menu">
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test1</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test2</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test3</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test4</a></li>
+            </ul>
+          </li>
+
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Kitchen</a>
+            <ul class="site-nav__drop-menu">
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test1</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test2</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test3</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test4</a></li>
+            </ul>
+          </li>
+
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Special nutrition</a>
+            <ul class="site-nav__drop-menu">
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test1</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test2</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test3</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test4</a></li>
+            </ul>
+          </li>
+
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Baby</a>
+            <ul class="site-nav__drop-menu">
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test1</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test2</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test3</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test4</a></li>
+            </ul>
+          </li>
+
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Pharmacy</a>
+            <ul class="site-nav__drop-menu">
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test1</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test2</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test3</a></li>
+              <li class="site-nav__drop-item"><a class="site-nav__drop-link" href="#">test4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
 
     </div>
   </header>
 
 
   <section class="search-modal">
-      <form class="search-modal__form" action="https://echo.htmlacademy.ru" method="POST">        
-          
-        <select class="search-modal__selection" name="select" id="select">
-          <option value="" disabled selected>All categories</option>
-          <option value="bakery">Bakery</option>
-          <option value="fruit">Fruit</option>
-          <option value="meat">Meat</option>
-          <option value="fish">Fish</option>
-          <option value="drinks">Drinks</option>
-          <option value="kitchen">Kitchen</option>
-        </select>
+    <h2 class="visually-hidden">find as</h2>
+    <form class="search-modal__form" action="https://echo.htmlacademy.ru" method="POST">        
+        
+      <select class="search-modal__selection" name="select" id="select_modal">
+        <option value="" disabled selected>All categories</option>
+        <option value="bakery">Bakery</option>
+        <option value="fruit">Fruit</option>
+        <option value="meat">Meat</option>
+        <option value="fish">Fish</option>
+        <option value="drinks">Drinks</option>
+        <option value="kitchen">Kitchen</option>
+      </select>
 
-        <input class="search-modal__search" type="text" name="search_products" id="search" placeholder="Search Products, categories ...">
+      <input class="search-modal__search" type="text" name="search_products" id="search_modal" placeholder="Search Products, categories ...">
 
-        <button class="search-modal__submit" type="submit"></button>
+      <button class="search-modal__submit" type="submit"></button>
 
-      </form>
+    </form>
   </section>
   <script src="/js/main.js"></script>
 </body>

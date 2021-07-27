@@ -162,6 +162,13 @@
   padding: 0;
 }
 
+.header-main__burger--closed {
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/icon/cancel.svg);
+  background-size: 18px 18px;
+}
+
 
 @include breakpoint-down (1270px) {
 
@@ -256,6 +263,7 @@
   }
 
   .header-main__link-wrap {
+    width: 170px;
     justify-content: space-evenly;
   }
 
@@ -268,6 +276,10 @@
     width: 18px;
     height: 18px;
     background-size: contain;
+  }
+
+  .header-main__burger {
+    display: block;
   }
 
 }
