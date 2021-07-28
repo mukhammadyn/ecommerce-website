@@ -20,8 +20,6 @@
 
 .footer-bottom__item {
   margin-bottom: 16px;
-  padding-left: 10px;
-  padding-right: 10px;
   border-radius: 12px;
   text-align: center;
   background-color: #F5F5F5;
@@ -32,14 +30,20 @@
 }
 
 .footer-bottom__link {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-decoration: none;
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
   color: $color-primary;
+  transition: color 0.3s ease;
 
   &:hover {
-    opacity: 0.8;
+    color: $color-link-hovered;
   }
 
   &:active {

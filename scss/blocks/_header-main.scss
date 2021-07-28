@@ -107,13 +107,16 @@
   height: 25px;
   background-repeat: no-repeat;
   background-position: center center;
+  text-decoration: none;
+  color: $color-primary;
+  transition: color 0.3s ease;
 
   &:not(:last-child) {
     margin-right: auto;
   }
 
   &:hover {
-    opacity: 0.8;
+    color: $color-link-hovered;
   }
 
   &:active {
@@ -121,14 +124,9 @@
   }
 }
 
-.header-main__link--user {
-  background-image: url(/img/icon/user-icon.svg);
-}
-
 .header-main__link--track {
   position: relative;
   z-index: 1;
-  background-image: url(/img/icon/track-icon.svg);
 }
 
 .header-main__link-counter {

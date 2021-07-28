@@ -684,6 +684,10 @@ img {
   height: 25px;
   background-repeat: no-repeat;
   background-position: center center;
+  text-decoration: none;
+  color: #151515;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .header-main__link:not(:last-child) {
@@ -691,21 +695,16 @@ img {
 }
 
 .header-main__link:hover {
-  opacity: 0.8;
+  color: #6A983C;
 }
 
 .header-main__link:active {
   opacity: 0.6;
 }
 
-.header-main__link--user {
-  background-image: url(/img/icon/user-icon.svg);
-}
-
 .header-main__link--track {
   position: relative;
   z-index: 1;
-  background-image: url(/img/icon/track-icon.svg);
 }
 
 .header-main__link-counter {
@@ -1383,8 +1382,6 @@ img {
 
 .footer-bottom__item {
   margin-bottom: 16px;
-  padding-left: 10px;
-  padding-right: 10px;
   border-radius: 12px;
   text-align: center;
   background-color: #F5F5F5;
@@ -1395,15 +1392,22 @@ img {
 }
 
 .footer-bottom__link {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-decoration: none;
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
   color: #151515;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .footer-bottom__link:hover {
-  opacity: 0.8;
+  color: #6A983C;
 }
 
 .footer-bottom__link:active {
