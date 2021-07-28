@@ -1,0 +1,14 @@
+.category-menu{
+  padding-right: 45px;
+  padding-left: 45px;
+  padding-bottom: 66px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@include breakpoint-down(780px){
+  .category-menu{
+    flex-direction: column;
+  }
+}

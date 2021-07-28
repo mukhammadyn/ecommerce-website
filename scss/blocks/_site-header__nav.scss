@@ -1,6 +1,6 @@
 // SITE HEADER NAV
 .site-header__nav {
-  display: none;
+  display: block;
 }
 
 @include breakpoint-down (690px) {
