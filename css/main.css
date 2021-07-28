@@ -1200,11 +1200,15 @@ img {
   .site-nav__item {
     margin-bottom: 20px;
   }
+  .header-main__burger--closed {
+    background-size: 16px 16px;
+    background-position: center center;
+  }
 }
 
 @media only screen and (max-width: 690px) {
   .site-nav {
-    position: fixed;
+    position: absolute;
     z-index: 10;
     right: 0;
     top: 113px;
@@ -1231,6 +1235,9 @@ img {
   .site-nav__link {
     font-size: 14px;
   }
+  .site-nav__link:focus {
+    border-bottom: 1px solid #000;
+  }
   .site-nav__drop-menu {
     top: 0;
     right: 100%;
@@ -1242,6 +1249,21 @@ img {
 @media only screen and (max-width: 580px) {
   .site-nav {
     top: 80px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .site-nav {
+    width: 205px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .site-nav {
+    width: 180px;
+  }
+  .site-nav__link {
+    font-size: 12px;
   }
 }
 
