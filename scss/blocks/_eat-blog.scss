@@ -221,3 +221,184 @@
   .eat-blog__dinner-title {
     max-width: auto;
   }
+
+
+}
+
+@include breakpoint-down (1025px) {
+
+  .eat-blog__dinner {
+    margin: 0 auto;
+    padding: 270px 40px 24px 30px;
+  }
+
+  .eat-blog__vegetable {
+    margin-top: 25px;
+    margin-left: 0;
+  }
+
+  .eat-blog__salat {
+    justify-content: flex-end;
+  }
+
+  .eat-blog__salat-content {
+    margin-right: auto;
+  }
+
+  .eat-blog__salat-title {
+    max-width: 375px;
+  }
+
+}
+
+@include breakpoint-down (860px) {
+
+  .eat-blog__salats {
+    flex-grow: 1;
+    margin: 0;
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+
+  .eat-blog__salat {
+    justify-content: space-between;
+    max-width: 400px;
+  }
+
+  .eat-blog__salat-pic {
+    margin-right: 15px;
+    order: -1;
+  }
+
+  .eat-blog__salat-content {
+    flex-grow: 1;
+    margin-left: auto;
+    max-width: 400px;
+  }
+
+}
+
+@include breakpoint-down (810px) {
+
+  .eat-blog__salat {
+    max-width: 300px;
+  }
+
+  .eat-blog__vegetable-bottom {
+    margin-top: 8px;
+  }
+
+  .eat-blog__salat-pic {
+    margin-right: 15px;
+    order: -1;
+  }
+
+  .eat-blog__salat-content {
+    max-width: auto;
+    margin-left: 0;
+  }
+
+}
+
+@include breakpoint-down (705px) {
+
+  .eat-blog__content {
+    justify-content: space-between;
+  }
+
+  .eat-blog__vegetable {
+    max-width: 195px;
+  }
+
+  .eat-blog__vegetable-top {
+    width: 200px;
+  }
+
+  .eat-blog__vegetable-title {
+    font-size: 15px;
+  }
+
+  .eat-blog__salat-title {
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+
+  .eat-blog__salats {
+    flex-grow: 0;
+    margin-left: 12px;
+  }
+
+  .eat-blog__salat-img {
+    width: 70px;
+  }
+
+}
+
+
+@include breakpoint-down (615px) {
+
+  .eat-blog__link {
+    margin-top: 3px;
+  }
+
+  .eat-blog__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .eat-blog__dinner {
+    width: 370px;
+    height: 370px;
+  }
+
+  .eat-blog__dinner-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .eat-blog__vegetable-content {
+    text-align: center;
+  }
+
+  .eat-blog__salats {
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .eat-blog__salat {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .eat-blog__salat-title {
+    margin-top: 8px;
+  }
+
+  .eat-blog__vegetable-bottom {
+    margin: 0;
+  }
+
+  .eat-blog__salat-content {
+    margin: 0 auto;
+  }
+
+}
+
+@include breakpoint-down (480px) {
+
+  .eat-blog__dinner {
+    width: 270px;
+    height: 270px;
+    padding: 132px 40px 24px 30px;
+  }
+
+  .eat-blog__heading {
+    font-size: 14px;
+  }
+
+  .eat-blog__link {
+    font-size: 14px;
+  }
+
+}
+
