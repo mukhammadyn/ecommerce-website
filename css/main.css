@@ -433,7 +433,9 @@ img {
 }
 
 /* CONTAINER */
-.page__container {
+.container {
+  width: 100%;
+  max-width: 1260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,11 +446,6 @@ img {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-}
-
-.container {
-  width: 100%;
-  max-width: 1260px;
   margin-left: auto;
   margin-right: auto;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -973,6 +970,9 @@ img {
 }
 
 @media only screen and (max-width: 690px) {
+  .site-header__nav {
+    display: none;
+  }
   .site-header__nav--active {
     display: block;
     -webkit-animation: scale-out-tr 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse both;
@@ -1790,11 +1790,15 @@ img {
   border-color: #6A983C;
 }
 
-.section-headline__list {
+.section-headline-products {
   width: 100%;
 }
 
-.section-headline__item {
+.section-headline-products__list {
+  width: 100%;
+}
+
+.section-headline-products__item {
   width: calc(100% / 4 - 32px);
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1958,5 +1962,250 @@ img {
   font-family: 'Open Sans';
   font-size: 14px;
   line-height: 19px;
+}
+
+.eat-blog {
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 69px;
+  padding-bottom: 64px;
+}
+
+.eat-blog__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.eat-blog__heading {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.eat-blog__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  color: #151515;
+}
+
+.eat-blog__link::after {
+  display: block;
+  width: 8px;
+  height: 10px;
+  margin-left: 13px;
+  background-image: url(/img/icon/blog-vector.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  content: '';
+}
+
+.eat-blog__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.eat-blog__dinner {
+  position: relative;
+  z-index: 1;
+  margin-right: 32px;
+  padding: 270px 65px 24px 24px;
+  border-radius: 12px;
+  background-image: url(/img/egg-eat.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.eat-blog__dinner-link {
+  position: absolute;
+  z-index: 1;
+  left: 24px;
+  top: 24px;
+  padding: 1px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #6A983C;
+  background-color: #F4F8EC;
+}
+
+.eat-blog__dinner-title {
+  max-width: 580px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #fff;
+}
+
+.eat-blog__dinner-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.eat-blog__author-pic {
+  margin-right: 8px;
+}
+
+.eat-blog__author-img {
+  display: block;
+}
+
+.eat-blog__author {
+  margin-right: 16px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.eat-blog__author-date {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.eat-blog__author-date--dark {
+  color: #151515;
+}
+
+.eat-blog__vegetable {
+  max-width: 269px;
+}
+
+.eat-blog__vegetable-top {
+  display: block;
+}
+
+.eat-blog__vegetable-content {
+  padding-top: 24px;
+}
+
+.eat-blog__vegetable-link {
+  padding: 1px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #6A983C;
+  background-color: #F4F8EC;
+}
+
+.eat-blog__vegetable-title {
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.eat-blog__vegetable-bottom {
+  margin-top: 16px;
+}
+
+.eat-blog__vegetable-author {
+  margin-right: 16px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.eat-blog__salats {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: 32px;
+}
+
+.eat-blog__salat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.eat-blog__salat:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.eat-blog__salat-content {
+  margin-right: 48px;
+}
+
+.eat-blog__salat-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.eat-blog__salat-pic {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.eat-blog__salat-img {
+  display: block;
+}
+
+/* MEDIA */
+@media only screen and (max-width: 1130px) {
+  .eat-blog__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .eat-blog__vegetable {
+    margin-left: auto;
+  }
+  .eat-blog__salats {
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  .eat-blog__salat {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 1078px) {
+  .eat-blog__dinner {
+    padding: 270px 21px 24px 15px;
+  }
+  .eat-blog__dinner-title {
+    max-width: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */

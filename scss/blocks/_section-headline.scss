@@ -53,15 +53,17 @@
   &:hover{
     border-color: $color-link-hovered;
   }
-
-
 }
 
-.section-headline__list{
+.section-headline-products{
   width: 100%;
 }
 
-.section-headline__item{
+.section-headline-products__list{
+  width: 100%;
+}
+
+.section-headline-products__item{
   width: calc(100% / 4 - 32px);
   flex-grow: 1;
   flex-shrink: 0;
