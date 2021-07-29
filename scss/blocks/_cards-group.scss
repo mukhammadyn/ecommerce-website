@@ -15,7 +15,7 @@
   background-color: #F1F5EA;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -81,21 +81,18 @@
     color: $color-link-hovered;
     border-color: $color-link-hovered;
   }
-
-  &:hover ::after{
-    
-  }
 }
 
 @include breakpoint-down(780px){
   .cards-group{
+    width: 100%;
     flex-direction: column;
   }
   
   .cards-group__card {
     width: calc(100%);
     margin: 0;
-    
+    // flex-grow: 1;
   }
 
   .cards-group__card:not(:last-child) {

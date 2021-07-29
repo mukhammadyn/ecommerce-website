@@ -75,23 +75,12 @@
 
 @include breakpoint-down(780px){
   .index-filter{
+    width: 100%;
     margin: 0;
-    margin-bottom: 50px;
-    flex-shrink: 0;
-  }
-  
-  .index-filter__title {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-  }
-}
-
-@include breakpoint-down(780px){
-  .index-filter{
+    margin-bottom: 20px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .index-filter__list{
@@ -99,5 +88,43 @@
     flex-direction: row;
     align-items: center;
     align-items: center;
+    margin-bottom: 20px;
   }
+
+  .index-filter__item{
+    margin-right: 10px;
+
+  }
+
+  .index-filter__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .index-filter__btn {
+    padding: 8px 10px;
+    background: #F5F5F5;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    font-family: $font-stack;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-primary;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  
+    &::after{
+      margin-left: 6px;
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-image: url("/img/icon/btn-after.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
 }

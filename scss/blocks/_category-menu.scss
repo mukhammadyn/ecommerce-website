@@ -9,7 +9,7 @@
 
 @include breakpoint-down(780px){
   .category-menu{
-    // align-items: flex-start;
-    // flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
