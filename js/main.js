@@ -22,3 +22,11 @@ if (elNavBtn) {
   })
 }
 
+$(document).ready(function(){
+  $('.slicking').slick({
+    adaptiveHight: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+  });
+});
