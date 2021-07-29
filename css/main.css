@@ -436,7 +436,6 @@ img {
 .container {
   width: 100%;
   max-width: 1260px;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1485,7 +1484,7 @@ img {
   margin-right: 32px;
   padding: 270px 65px 24px 24px;
   border-radius: 12px;
-  background-image: url(/img/egg-eat.png);
+  background-image: url(../img/egg-eat.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
