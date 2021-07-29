@@ -1637,4 +1637,33 @@ img {
 .eat-blog__salat-img {
   display: block;
 }
+
+/* MEDIA */
+@media only screen and (max-width: 1130px) {
+  .eat-blog__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .eat-blog__vegetable {
+    margin-left: auto;
+  }
+  .eat-blog__salats {
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  .eat-blog__salat {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 1078px) {
+  .eat-blog__dinner {
+    padding: 270px 21px 24px 15px;
+  }
+  .eat-blog__dinner-title {
+    max-width: auto;
+  }
+}
 /*# sourceMappingURL=main.css.map */
