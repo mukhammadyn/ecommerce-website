@@ -1125,8 +1125,8 @@ img {
   font-family: "Open Sans", "Arial", sans-serif;
   text-decoration: none;
   color: #575757;
-  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .site-nav__drop-link:hover {
@@ -1825,6 +1825,117 @@ img {
   color: #6A983C;
 }
 
+.slicking-section {
+  padding-top: 69px;
+  padding-bottom: 70px;
+}
+
+.slicking-section__header {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.slicking {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 0;
+  padding-bottom: 40px;
+}
+
+.slicking__item {
+  position: relative;
+  z-index: 10;
+  width: calc(100% / 3 - 32px);
+  min-width: 396px;
+  margin-right: 32px;
+  padding: 24px 32px 40px 32px;
+  border: 1px solid #f1f1f1;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.slicking__block-q-te {
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.slicking__user-name {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+
+.slicking__pic {
+  position: absolute;
+  z-index: 90;
+  top: calc(100% - 24px);
+  left: calc(50% - 24px);
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  position: relative;
+  top: 27%;
+}
+
+.slick-arrow {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  width: 32px;
+  height: 48px;
+  -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
+  border: none;
+  background-color: #151515;
+  border-radius: 12px;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.slick-arrow:hover {
+  opacity: 0.8;
+}
+
+.slick-arrow:active {
+  opacity: 0.6;
+}
+
+.slick-prev {
+  left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-image: url(/img/icon/prev-btn.svg);
+}
+
+.slick-next {
+  right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-image: url(/img/icon/next-btn.svg);
+}
+
 .best-from-farmers {
   padding-right: 45px;
   padding-left: 45px;
@@ -1875,7 +1986,7 @@ img {
           align-items: center;
 }
 
-.section-headline__header {
+.section-headline__header, .slicking-section__header {
   width: 100%;
   padding-bottom: 32px;
   display: -webkit-box;
@@ -1889,7 +2000,7 @@ img {
           justify-content: space-between;
 }
 
-.section-headline__title {
+.section-headline__title, .slicking-section__title {
   padding: 0;
   margin: 0;
   font-family: "Poppins", "Arial", sans-serif;
@@ -1899,7 +2010,7 @@ img {
   color: #151515;
 }
 
-.section-headline__btn {
+.section-headline__btn, .slicking-section__btn {
   background-color: transparent;
   width: 98px;
   height: 35px;
@@ -1918,7 +2029,7 @@ img {
           align-items: center;
 }
 
-.section-headline__btn::after {
+.section-headline__btn::after, .slicking-section__btn::after {
   content: "";
   display: block;
   width: 16px;
@@ -1928,7 +2039,7 @@ img {
   background-position: center;
 }
 
-.section-headline__btn:hover {
+.section-headline__btn:hover, .slicking-section__btn:hover {
   border-color: #6A983C;
 }
 
@@ -2176,251 +2287,6 @@ img {
   height: 10px;
   margin-left: 13px;
   background-image: url(/img/icon/blog-vector.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  content: '';
-}
-
-.eat-blog__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-}
-
-.eat-blog__dinner {
-  position: relative;
-  z-index: 1;
-  margin-right: 32px;
-  padding: 270px 65px 24px 24px;
-  border-radius: 12px;
-  background-image: url(/img/egg-eat.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.eat-blog__dinner-link {
-  position: absolute;
-  z-index: 1;
-  left: 24px;
-  top: 24px;
-  padding: 1px 8px;
-  border-radius: 12px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-  text-decoration: none;
-  color: #6A983C;
-  background-color: #F4F8EC;
-}
-
-.eat-blog__dinner-title {
-  max-width: 580px;
-  margin-top: 0;
-  margin-bottom: 8px;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 33px;
-  color: #fff;
-}
-
-.eat-blog__dinner-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.eat-blog__author-pic {
-  margin-right: 8px;
-}
-
-.eat-blog__author-img {
-  display: block;
-}
-
-.eat-blog__author {
-  margin-right: 16px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  color: #fff;
-}
-
-.eat-blog__author-date {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  color: #fff;
-}
-
-.eat-blog__author-date--dark {
-  color: #151515;
-}
-
-.eat-blog__vegetable {
-  max-width: 269px;
-}
-
-.eat-blog__vegetable-top {
-  display: block;
-}
-
-.eat-blog__vegetable-content {
-  padding-top: 24px;
-}
-
-.eat-blog__vegetable-link {
-  padding: 1px 8px;
-  border-radius: 12px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-  text-decoration: none;
-  color: #6A983C;
-  background-color: #F4F8EC;
-}
-
-.eat-blog__vegetable-title {
-  margin-top: 8px;
-  margin-bottom: 0;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-}
-
-.eat-blog__vegetable-bottom {
-  margin-top: 16px;
-}
-
-.eat-blog__vegetable-author {
-  margin-right: 16px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  color: #151515;
-}
-
-.eat-blog__salats {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  margin-left: 32px;
-}
-
-.eat-blog__salat {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.eat-blog__salat:not(:last-child) {
-  margin-bottom: 32px;
-}
-
-.eat-blog__salat-content {
-  margin-right: 48px;
-}
-
-.eat-blog__salat-title {
-  margin-top: 0;
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-}
-
-.eat-blog__salat-pic {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-
-.eat-blog__salat-img {
-  display: block;
-}
-
-/* MEDIA */
-@media only screen and (max-width: 1130px) {
-  .eat-blog__content {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .eat-blog__vegetable {
-    margin-left: auto;
-  }
-  .eat-blog__salats {
-    margin: 0 auto;
-    margin-top: 25px;
-  }
-  .eat-blog__salat {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-@media only screen and (max-width: 1078px) {
-  .eat-blog__dinner {
-    padding: 270px 21px 24px 15px;
-  }
-  .eat-blog__dinner-title {
-    max-width: auto;
-  }
-}
-
-.eat-blog {
-  padding-left: 45px;
-  padding-right: 45px;
-  padding-top: 69px;
-  padding-bottom: 64px;
-}
-
-.eat-blog__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-}
-
-.eat-blog__heading {
-  margin-top: 0;
-  margin-bottom: 36px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-}
-
-.eat-blog__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  font-weight: 700;
-  color: #151515;
-}
-
-.eat-blog__link::after {
-  display: block;
-  width: 8px;
-  height: 10px;
-  margin-left: 13px;
-  background-image: url(/img/icon/right-vector.svg);
   background-repeat: no-repeat;
   background-position: center center;
   content: '';
