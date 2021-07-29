@@ -68,3 +68,23 @@
   flex-grow: 1;
   flex-shrink: 0;
 }
+
+@include breakpoint-down(1000px){
+  .section-headline-products__list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section-headline-products__item{
+    width: calc(100% / 2 - 32px);
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+}
+
+@include breakpoint-down(780px){
+  .section-headline-products__item{
+    width: calc(100%);
+  }
+}

@@ -105,7 +105,7 @@
   color: #A9A9A9;
 }
 
-@include breakpoint-down(780px){
+@include breakpoint-down(1000px){
   .index-products{
     width: 100%;
   }
@@ -142,10 +142,16 @@
   .index-products__img{
     display: block;
     margin: 0;
-    width: auto;
+    width: 100%;
     height: auto;
     margin-bottom: 16px;
     border-radius: 12px;
   }
 
+}
+
+@include breakpoint-down(780px){
+  .index-products__item{
+    width: calc(100%);
+  }
 }

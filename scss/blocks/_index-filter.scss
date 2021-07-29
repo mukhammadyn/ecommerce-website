@@ -82,13 +82,14 @@
     flex-direction: column;
     align-items: flex-start;
   }
-
+  
   .index-filter__list{
     display: flex;
     flex-direction: row;
     align-items: center;
     align-items: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
   }
 
   .index-filter__item{

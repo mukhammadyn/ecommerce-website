@@ -1408,6 +1408,8 @@ img {
             align-items: center;
     align-items: center;
     margin-bottom: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .index-filter__item {
     margin-right: 10px;
@@ -1735,7 +1737,7 @@ img {
   color: #A9A9A9;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 1000px) {
   .index-products {
     width: 100%;
   }
@@ -1773,10 +1775,16 @@ img {
   .index-products__img {
     display: block;
     margin: 0;
-    width: auto;
+    width: 100%;
     height: auto;
     margin-bottom: 16px;
     border-radius: 12px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .index-products__item {
+    width: calc(100%);
   }
 }
 
@@ -1811,8 +1819,16 @@ img {
           align-items: center;
 }
 
+@media only screen and (max-width: 1000px) {
+  .best-from-farmers {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 @media only screen and (max-width: 780px) {
-  .category-menu {
+  .best-from-farmers {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1912,6 +1928,31 @@ img {
           flex-grow: 1;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .section-headline-products__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section-headline-products__item {
+    width: calc(100% / 2 - 32px);
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .section-headline-products__item {
+    width: calc(100%);
+  }
 }
 
 .site-footer {
