@@ -86,3 +86,18 @@
     line-height: 24px;
   }
 }
+
+@include breakpoint-down(780px){
+  .index-filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .index-filter__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+  }
+}
