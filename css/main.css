@@ -654,7 +654,6 @@ img {
 }
 
 .header-main__link-wrap {
-  width: 88px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -687,16 +686,16 @@ img {
   transition: color 0.3s ease;
 }
 
-.header-main__link:not(:last-child) {
-  margin-right: auto;
-}
-
 .header-main__link:hover {
   color: #6A983C;
 }
 
 .header-main__link:active {
   opacity: 0.6;
+}
+
+.header-main__link--user {
+  margin-right: 41px;
 }
 
 .header-main__link--track {
@@ -780,9 +779,6 @@ img {
     padding-right: 16px;
     font-size: 14px;
   }
-  .header-main__link-wrap {
-    width: 70px;
-  }
   .header-main__link {
     width: 25px;
     height: 25px;
@@ -799,7 +795,6 @@ img {
     display: none;
   }
   .header-main__link-wrap {
-    width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -809,31 +804,34 @@ img {
   }
   .header-main__search-modal {
     display: block;
+    margin-right: 30px;
   }
   .header-main__link {
     background-size: cover;
   }
-  .header-main__link:not(:last-child) {
-    margin-right: 0;
+  .header-main__link--user {
+    margin-right: 30px;
   }
 }
 
 @media only screen and (max-width: 690px) {
+  .site-header {
+    padding: 0;
+  }
   .header-main__logo {
     width: 140px;
     height: auto;
   }
   .header-main__link-wrap {
-    width: 170px;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
   .header-main__link {
     background-size: contain;
+  }
+  .header-main__link--track {
+    margin-right: 30px;
   }
   .header-main__burger {
     display: block;
@@ -854,20 +852,28 @@ img {
             justify-content: flex-end;
   }
   .header-main__search-modal {
-    margin-right: 5px;
+    margin-right: 10px;
   }
   .header-main__link {
-    margin-right: 5px;
-  }
-  .header-main__link:not(:last-child) {
-    margin-right: 5px;
+    margin-right: 10px;
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 365px) {
   .header-main {
-    padding-left: 20px;
-    padding-right: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+  .header-main__logo-link {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .header-main__logo {
+    width: 195px;
   }
 }
 
@@ -1229,13 +1235,17 @@ img {
     z-index: 10;
     right: 0;
     top: 90px;
-    width: 250px;
+    width: 100%;
+    height: 100vh;
     padding: 0;
-    padding-top: 20px;
     padding-bottom: 20px;
+    background-color: rgba(180, 180, 180, 0.568);
   }
   .site-nav__list {
-    margin-left: 0;
+    width: 250px;
+    margin-left: auto;
+    padding-top: 20px;
+    background-color: #f9f9f9;
   }
   .site-nav__item {
     width: 100%;
