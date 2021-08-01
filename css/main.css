@@ -2317,10 +2317,58 @@ img {
   margin-right: 32px;
   padding: 270px 65px 24px 24px;
   border-radius: 12px;
-  background-image: url(../img/egg-eat.png);
+  background-image: url("../img/egg-eat.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-origin: center;
+  -webkit-animation: zoomout 0.7s linear;
+          animation: zoomout 0.7s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.eat-blog__dinner:hover {
+  -webkit-animation: zoomin 0.7s linear;
+          animation: zoomin 0.7s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes zoomin {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 120%;
+  }
+}
+
+@-webkit-keyframes zoomout {
+  0% {
+    background-size: 120%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+@-webkit-keyframes zoomin {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 120%;
+  }
+}
+
+@-webkit-keyframes zoomout {
+  0% {
+    background-size: 120%;
+  }
+  100% {
+    background-size: 100%;
+  }
 }
 
 .eat-blog__dinner-link {
@@ -2390,6 +2438,11 @@ img {
 
 .eat-blog__vegetable-top {
   display: block;
+}
+
+.eat-blog__vegetable-top:hover {
+  -o-object-fit: 20ox 20px;
+     object-fit: 20ox 20px;
 }
 
 .eat-blog__vegetable-content {
