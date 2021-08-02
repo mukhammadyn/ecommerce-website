@@ -4,7 +4,7 @@
   padding-left: 45px;
   padding-bottom: 64px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 @include breakpoint-down(780px){
