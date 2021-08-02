@@ -1351,6 +1351,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .index-filter__btn::after {
