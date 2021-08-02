@@ -1774,7 +1774,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 670px) {
   .index-products__item {
     width: calc(100%);
   }

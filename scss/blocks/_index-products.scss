@@ -150,7 +150,7 @@
 
 }
 
-@include breakpoint-down(780px){
+@include breakpoint-down(670px){
   .index-products__item{
     width: calc(100%);
   }
