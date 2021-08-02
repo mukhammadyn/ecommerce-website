@@ -322,6 +322,45 @@
 /* MEDIA */ 
 @include breakpoint-down (1130px) {
 
+  .eat-blog__salat--big {
+    width: 40%;
+  }
+
+  .eat-blog__salat--normal {
+    width: calc(60% - 32px);
+    margin-left: 0;
+  }
+
+  .eat-blog__salat--normal .eat-blog__salat-inner {
+    max-width: 100%;
+    flex-grow: 1;
+  }
+
+  .eat-blog__salat--normal .eat-blog__salat-inner {
+    flex-direction: row;
+  }
+
+  .eat-blog__salat--normal .eat-blog__salat-content {
+    margin-right: 48px;
+  }
+
+  .eat-blog__salat--normal .eat-blog__salat-img {
+    width: 96px;
+    height: 96px;
+    order: 2;
+    margin: 0;
+  }
+
+  .eat-blog__salat--normal .eat-blog__vegetable-link {
+    display: none;
+  }
+
+  .eat-blog__salat--normal .eat-blog__salat-title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
   .eat-blog__content {
     flex-wrap: wrap;
   }
@@ -330,11 +369,19 @@
     margin-left: auto;
   }
 
-  .eat-blog__salats {
-    margin: 0 auto;
-    margin-top: 25px;
+  .eat-blog__salats-wrapper {
+    width: calc(60% - 32px);
   }
 
+  // .eat-blog__salats {
+  //   margin: 0 auto;
+  //   margin-top: 25px;
+  // }
+
+  .eat-blog__salat--small {
+    width: calc(60% - 32px);
+  }
+  
   .eat-blog__salat {
     justify-content: space-between;
   }
@@ -388,7 +435,7 @@
 @include breakpoint-down (810px) {
 
   .eat-blog__salat {
-    max-width: 300px;
+    max-width: 490px;
   }
 
   .eat-blog__vegetable-bottom {
@@ -396,8 +443,67 @@
   }
 
   .eat-blog__salat-content {
-    max-width: auto;
     margin-left: 0;
+  }
+
+  .eat-blog__content {
+    width: 100%;
+    justify-content: start;
+  }
+
+  .eat-blog__salat--big {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .eat-blog__salat--big .eat-blog__salat-inner {
+    margin: 0 auto;
+  }
+
+  .eat-blog__salat--normal {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
+  .eat-blog__salat--normal .eat-blog__salat-inner {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+  }
+
+  .eat-blog__salat--normal .eat-blog__salat-content {
+    margin-right: 12px;
+    order: 0;
+  }
+
+  .eat-blog__salats-wrapper {
+    flex-grow: 1;
+  }
+
+  .eat-blog__salats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .eat-blog__salat--small {
+    width: calc(100% / 2 - 12px);
+    margin-right: 12px;
+  }
+
+  .eat-blog__salat--small .eat-blog__salat-inner {
+    flex-direction: column-reverse;
+  }
+
+  .eat-blog__salat--small .eat-blog__salat-content {
+    margin: 0;
+    text-align: center;
   }
 
 }
@@ -437,15 +543,14 @@
 }
 
 
-@include breakpoint-down (615px) {
+@include breakpoint-down (625px) {
 
   .eat-blog__link {
     margin-top: 3px;
   }
 
   .eat-blog__content {
-    flex-direction: column;
-    align-items: center;
+    
   }
 
   .eat-blog__vegetable-content {
@@ -458,8 +563,6 @@
   }
 
   .eat-blog__salat {
-    flex-direction: column;
-    text-align: center;
   }
 
   .eat-blog__salat-title {

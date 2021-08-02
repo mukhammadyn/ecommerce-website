@@ -28,6 +28,23 @@
   }
 }
 
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
 @mixin cssretina {
   @media
     only screen and (-webkit-min-device-pixel-ratio: 2),
