@@ -1,0 +1,57 @@
+/* FRUIT-SECTION */
+.fruit-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.fruit-section__title{
+  @include list-unstyled;
+}
+
+.fruit-section__button-grid{
+  position: relative;
+  margin-right: 24px;
+  border: none;
+  background-color: transparent;
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.fruit-section__button-grid::before{
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../../img/icon/ic-layout-square-grid.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: 10%;
+  left: -25%;
+}
+
+.fruit-section__button-list{
+  margin-right: 24px;
+  border: none;
+  background-color: transparent;
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.fruit-section__button-product{
+  border: none;
+  background-color: transparent;
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}

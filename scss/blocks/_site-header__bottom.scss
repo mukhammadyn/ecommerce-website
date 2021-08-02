@@ -1,0 +1,29 @@
+/* SITE-HEADER__BOTTOM */
+.site-header__bottom{
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.site-header__bottom-link{
+  text-decoration: none;
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+
+  &:hover{
+    opacity: 0.6;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
+}
+
+.site-header__bottom-link:not(:last-child){
+  margin-right: 21px;
+}
+
