@@ -45,3 +45,44 @@
   top: calc(100% - 24px);
   left: calc(50% - 24px);
 }
+
+/* MEDIA */
+@include breakpoint-down (1200px) {
+
+  .slicking {
+    height: 350px;
+  }
+
+}
+
+@include breakpoint-down (1070px) {
+
+  .slicking {
+    height: 300px;
+  }
+
+}
+
+@include breakpoint-down (1010px) {
+
+  .slicking {
+    height: 315px;
+  }
+
+}
+
+@include breakpoint-down (1007px) {
+
+  .slicking__item {
+    width: 450px !important;
+  }
+
+}
+
+@include breakpoint-down (1000px) {
+
+  .slicking {
+    height: 345px;
+  }
+
+}

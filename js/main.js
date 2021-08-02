@@ -28,5 +28,35 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 1070,
+        settings: {
+          slidesToShow: 1.5,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 890,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 705,
+        // settings: "unslick", 
+        slidesToShow: 0.5,
+        slidesToScroll: 1
+      }
+
+    ]
   });
 });

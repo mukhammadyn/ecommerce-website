@@ -17,3 +17,15 @@
 .slicking-section__btn {
   @extend .section-headline__btn;
 }
+
+@include breakpoint-down (1070px) {
+
+  .slicking-section {
+    padding-bottom: 0;
+  }
+
+  .slicking-section__header {
+    padding-bottom: 0 !important;
+  }
+
+}
