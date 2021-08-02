@@ -2119,10 +2119,10 @@ img {
     margin-top: 30px;
   }
   .footer-top__heading {
-    text-align: center;
+    text-align: left;
   }
   .footer-top__list {
-    text-align: center;
+    text-align: left;
   }
 }
 
