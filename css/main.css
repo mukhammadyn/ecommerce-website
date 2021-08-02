@@ -1131,8 +1131,8 @@ img {
   font-family: "Open Sans", "Arial", sans-serif;
   text-decoration: none;
   color: #575757;
-  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .site-nav__drop-link:hover {
@@ -2154,12 +2154,6 @@ img {
   }
   .footer-top__content:nth-child(n+3) {
     margin-top: 30px;
-  }
-  .footer-top__heading {
-    text-align: center;
-  }
-  .footer-top__list {
-    text-align: center;
   }
 }
 

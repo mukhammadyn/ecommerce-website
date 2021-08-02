@@ -41,7 +41,7 @@
 }
 
 
-/* MEDIA */ 
+/* MEDIA */
 @include breakpoint-down (850px) {
 
   .footer-top__content {
@@ -52,13 +52,6 @@
     }
   }
 
-  .footer-top__heading {
-    text-align: center;
-  }
-
-  .footer-top__list {
-    text-align: center;
-  }
 
 }
 
