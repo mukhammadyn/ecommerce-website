@@ -2099,6 +2099,12 @@ img {
   }
 }
 
+@media only screen and (max-width: 570px) {
+  .section-headline-products__item {
+    width: calc(100%);
+  }
+}
+
 .site-footer {
   padding-bottom: 64px;
 }

@@ -88,3 +88,9 @@
     width: calc(100% / 2 - 32px);
   }
 }
+
+@include breakpoint-down(570px){
+  .section-headline-products__item{
+    width: calc(100%);
+  }
+}
