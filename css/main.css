@@ -2095,7 +2095,7 @@ img {
 
 @media only screen and (max-width: 780px) {
   .section-headline-products__item {
-    width: calc(100%);
+    width: calc(100% / 2 - 32px);
   }
 }
 
