@@ -84,7 +84,6 @@
 }
 
 .header-main__link-wrap {
-  width: 88px;
   display: flex;
   align-items: center;
 }
@@ -111,10 +110,6 @@
   color: $color-primary;
   transition: color 0.3s ease;
 
-  &:not(:last-child) {
-    margin-right: auto;
-  }
-
   &:hover {
     color: $color-link-hovered;
   }
@@ -122,6 +117,10 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.header-main__link--user {
+  margin-right: 41px;
 }
 
 .header-main__link--track {
@@ -155,7 +154,7 @@
   background-image: url(/img/icon/burger-icon.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: 30px;
   background-color: #fff;
   padding: 0;
 }
@@ -208,13 +207,9 @@
     font-size: 14px;
   }
 
-  .header-main__link-wrap {
-    width: 70px;
-  }
-
   .header-main__link {
-    width: 18px;
-    height: 18px;
+    width: 25px;
+    height: 25px;
     background-size: contain;
   }
 
@@ -232,28 +227,30 @@
   }
 
   .header-main__link-wrap {
-    width: 100px;
     display: flex;
     justify-content: space-between;
   }
 
   .header-main__search-modal {
     display: block;
+    margin-right: 30px;
   }
 
   .header-main__link {
-    width: 25px;
-    height: 25px;
     background-size: cover;
+  }
 
-    &:not(:last-child) {
-      margin-right: 0;
-    }
+  .header-main__link--user {
+    margin-right: 30px;
   }
 
 }
 
 @include breakpoint-down (690px) {
+
+  .site-header {
+    padding: 0;
+  }
 
   .header-main__logo {
     width: 140px;
@@ -261,19 +258,15 @@
   }
 
   .header-main__link-wrap {
-    width: 170px;
-    justify-content: space-evenly;
-  }
-
-  .header-main__search-modal {
-    width: 18px;
-    height: 18px;
+    align-items: flex-start;
   }
 
   .header-main__link {
-    width: 18px;
-    height: 18px;
     background-size: contain;
+  }
+
+  .header-main__link--track {
+    margin-right: 30px;
   }
 
   .header-main__burger {
@@ -282,11 +275,55 @@
 
 }
 
-@include breakpoint-down (350px) {
+@include breakpoint-down (470px) {
 
   .header-main {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
+
+  .header-main__logo-link {
+    margin-right: 10px;
+  }
+
+  .header-main__link-wrap {
+    justify-content: flex-end;
+  }
+
+  .header-main__search-modal {
+    margin-right: 10px;
+  }
+
+  .header-main__link {
+    margin-right: 10px;
+  }
+
+}
+
+@include breakpoint-down (365px) {
+
+  .header-main {
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+
+  .header-main__logo-link {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .header-main__logo {
+    width: 195px;
+  }
+
+}
+
+@include breakpoint-down (350px) {
+
+  // .header-main {
+  //   padding-left: 20px;
+  //   padding-right: 20px;
+  // }
 
 }

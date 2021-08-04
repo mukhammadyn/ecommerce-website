@@ -1,0 +1,69 @@
+/* FRUIT-SECTION */
+.fruit-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.fruit-section__title{
+  @include list-unstyled;
+}
+
+.fruit-section__buttons{
+  display: flex;
+  align-items: center;
+}
+
+.fruit-section__button{
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.fruit-section__button:not(:last-child){
+  margin-right: 10px;
+}
+
+.fruit-section__button::before{
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.fruit-section__button:nth-child(1)::before{
+  background-image: url(../../img/icon/ic-layout-square-grid.svg);
+}
+
+.fruit-section__button:nth-child(2)::before{
+  background-image: url(../../img/icon/ic-layout-sections.svg);
+}
+
+.fruit-section__button:nth-child(3){
+  position: relative;
+}
+
+.fruit-section__button-span{
+  position: absolute;
+  left: -10%;
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 12px;
+  color: #6A983C;
+  border-radius: 12px;
+  background-color: #F4F8EC;
+}
