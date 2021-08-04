@@ -40,20 +40,29 @@
   }
 }
 
-.index-filter__btn {
-  padding: 12px 16px;
-  background: #F5F5F5;
-  border-radius: 12px;
-  border: 2px solid transparent;
+.index-filter__btn-txt{
+  width: 100%;
+  max-width: 167px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-family: $font-stack;
   font-weight: bold;
   font-size: 15px;
   line-height: 22px;
   color: $color-primary;
-  display: inline-flex;
-  align-items: center;
+  
+}
+
+.index-filter__btn{
+  width: 80%;
   text-decoration: none;
-  white-space: nowrap;
+  display: inline-flex;
+  padding: 12px 16px;
+  background: #F5F5F5;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  align-items: center;
 
   &::after{
     margin-left: 6px;
