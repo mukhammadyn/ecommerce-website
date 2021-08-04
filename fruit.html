@@ -152,12 +152,14 @@
       <div class="filtre-section">
         <form class="filtre-section__form" action="https://echo.htmlacademy.ru">
           <div class="filtre-section__form-input">
-            <label class="filtre-section__label-radio" for="filtre">
-              <input class="filtre-section__input-radio" type="radio" id="filtre" name="name" value="filtre text">
+            <label class="filtre-section__label-radio" for="filtre-first">
+              <input class="filtre-section__input-radio" type="radio" id="filtre-first" name="name" value="filtre text">
+              <span class="filtre-section__radio-box"></span>
               Filtre text
             </label>
-            <label class="filtre-section__label-radio" for="filtre">
-              <input class="filtre-section__input-radio" type="radio" id="filtre" name="name" value="filtre text">
+            <label class="filtre-section__label-radio" for="filtre-second">
+              <input class="filtre-section__input-radio" type="radio" id="filtre-second" name="name" value="filtre text">
+              <span class="filtre-section__radio-box"></span>
               Filtre text
             </label>
           </div>
@@ -173,7 +175,7 @@
 
           <div class="filtre-section__checkbox">
             <label for="box-second">
-              <input class="filtre-section__checkbox-input" type="checkbox" id="box-second" name="name" value="filtre" checked>
+              <input class="filtre-section__checkbox-input" type="checkbox" name="name" value="filtre"  id="box-second">
               <span class="filtre-section__checkbox-box"></span>
               Filtre
               <span class="filtre-section__checkbox-span">Nbm</span>
@@ -183,7 +185,7 @@
 
           <div class="filtre-section__select-checkbox">
               <label class="filtre-section__checkbox-label" for="box-third">
-                <input class="filtre-section__checkbox-input" type="checkbox" id="box-third" name="name" value="filtre" checked disabled>
+                <input class="filtre-section__checkbox-input" type="checkbox"  name="name" value="filtre" id="box-third">
                 <span class="filtre-section__checkbox-box"></span>
                 Filtre
                 <span class="filtre-section__checkbox-span">12</span>
@@ -199,21 +201,66 @@
               </select>
           </div>
 
-          <div class="filtre-section__text">
-            <p class="filtre-section__first-text">Applied filtres:</p>
-           <div class="filtre-section__second-content">
-            <p class="filtre-section__second-text">Selected Filtre</p>
-            <span class="filtre-section__second-span"></span>
-           </div>
-           <div  class="filtre-section__second-content">
-            <p class="filtre-section__second-text">Selected Filtre</p>
-            <span class="filtre-section__second-span"></span>
-           </div>
+          <div class="filtre-section__content">
+            <p class="filtre-section__content-title">Applied filtres:</p>
+            <div class="filtre-section__content-about div-one">
+              <p class="filtre-section__content-text">Selected Filtre</p>
+              <button class="filtre-section__content-button js-filtre-section__button btn-one" type="button"></button>
+            </div>
+            <div class="filtre-section__content-about div-two">
+              <p class="filtre-section__content-text">Selected Filtre</p>
+              <button class="filtre-section__content-button  js-filtre-section__button btn-two" type="button"></button>
+            </div>
+          </div>
+
+          <div class="filtre-section__form-choose">
+            <div class="filtre-section__form-categories categories-section">
+              <div class="categories-section__about">
+                <p class="categories-section__text">Category name</p>
+                <span class="categories-section__span">320</span>
+              </div>
+              <div class="categories-section__about">
+                <p class="categories-section__text">Category name</p>
+                <span class="categories-section__span">320</span>
+              </div>
+              <div class="categories-section__about">
+                <p class="categories-section__text">Category name</p>
+                <span class="categories-section__span">320</span>
+              </div>
+              <div class="categories-section__about">
+                <p class="categories-section__text">Category name</p>
+                <span class="categories-section__span">320</span>
+              </div>
+            </div>
+
+            <div class="filtre-section__form-brend brend-section">
+              <label class="brend-section__label" for="brend">
+                <input class="brend-section__input" type="checkbox" id="brend" name="name">
+                Filtre by brand item
+              </label>
+              <label class="brend-section__label" for="brend">
+                <input class="brend-section__input" type="checkbox" id="brend" name="name">
+                Filtre by brand item
+              </label>
+              <label class="brend-section__label" for="brend">
+                <input class="brend-section__input" type="checkbox" id="brend" name="name">
+                Filtre by brand item
+              </label>
+              <label class="brend-section__label" for="brend">
+                <input class="brend-section__input" type="checkbox" id="brend" name="name">
+                Filtre by brand item
+              </label>
+              <label class="brend-section__label" for="brend">
+                <input class="brend-section__input" type="checkbox" id="brend" name="name">
+                Filtre by brand item
+              </label>
+            </div>
+
           </div>
         </form>
-
       </div>
     </main>
   </div>
 </body>
+<script src="./js/main.js"></script>
 </html>
