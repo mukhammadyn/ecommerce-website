@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="/css/main.css">
   </head>
+l
   <body>
 
     <div class="container">
@@ -30,8 +31,9 @@
           <a class="header-main__logo-link" href="#"><img class="header-main__logo" src="/img/icon/site-logo.svg" alt="logo" width="177" height="18"></a>
           <form class="header-main__form" action="https://echo.htmlacademy.ru" method="POST">
 
-            <select class="header-main__selection" name="select" id="select">
+            <select class="header-main__selection" name="select" id="select" autocomplete="off">
               <option value="all">All categories</option>
+              <option value="all" selected>All categories</option>
               <option value="bakery">Bakery</option>
               <option value="fruit">Fruit</option>
               <option value="meat">Meat</option>
@@ -39,7 +41,7 @@
               <option value="drinks">Drinks</option>
               <option value="kitchen">Kitchen</option>
             </select>
-            <input class="header-main__search" type="text" name="search_products" id="search" placeholder="Search Products, categories ...">
+            <input class="header-main__search" type="text" name="search_products" id="search" placeholder="Search Products, categories ..." required>
             <button class="header-main__submit" type="submit"></button>
           </form>
           <div class="header-main__link-wrap">
@@ -162,7 +164,9 @@
             </li>
           </ul>
 
-          <a class="index-filter__btn" href="#">More categories</a>
+          <a class="index-filter__btn" href="#">
+            <span class="index-filter__btn-txt">More categoriesjdfjksladfjklsd;afjklsd;ajfkls;j</span>
+          </a>
         </section>
 
         <div class="cards-group">
@@ -205,7 +209,9 @@
             </li>
           </ul>
 
-          <a class="index-filter__btn" href="#">More categories</a>
+          <a class="index-filter__btn" href="#">
+            <span class="index-filter__btn-txt">More categoriesjdfjksladfjklsd;afjklsd;ajfkls;j</span>
+          </a>
         </section>
 
         <section class="index-products">
@@ -280,7 +286,9 @@
             </li>
           </ul>
 
-          <a class="index-filter__btn" href="#">More categories</a>
+          <a class="index-filter__btn" href="#">
+            <span class="index-filter__btn-txt">More categoriesjdfjksladfjklsd;afjklsd;ajfkls;j</span>
+          </a>
         </section>
 
         <section class="index-products">
