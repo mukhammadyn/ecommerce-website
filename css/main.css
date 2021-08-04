@@ -452,10 +452,6 @@ img {
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.site-header {
-  padding-bottom: 64px;
-}
-
 .header-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1199,16 +1195,22 @@ img {
     right: 0;
     top: 90px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 0;
     padding-bottom: 20px;
     background-color: rgba(180, 180, 180, 0.568);
+  }
+  .site-nav__list-wrapper {
+    width: 250px;
+    height: 100%;
+    margin-left: auto;
+    overflow-x: hidden;
+    background-color: #f9f9f9;
   }
   .site-nav__list {
     width: 250px;
     margin-left: auto;
     padding-top: 20px;
-    background-color: #f9f9f9;
   }
   .site-nav__item {
     width: 100%;
@@ -1258,6 +1260,7 @@ img {
 }
 
 .category-menu {
+  padding-top: 64px;
   padding-right: 45px;
   padding-left: 45px;
   padding-bottom: 66px;
@@ -2103,6 +2106,233 @@ img {
   .section-headline-products__item {
     width: calc(100%);
   }
+}
+
+.category-hero {
+  padding-top: 16px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.category-header__links {
+  margin-bottom: 26px;
+}
+
+.category-header__links span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+}
+
+.category-header__link {
+  text-decoration: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+}
+
+.category-header__link:not(:last-child) {
+  margin-right: 4px;
+}
+
+.category-header__link:last-child {
+  margin-left: 4px;
+}
+
+.category-header__link--active {
+  color: #151515;
+}
+
+.category-header__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.category-header__heading {
+  margin: 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.category-header__styles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.category-header__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 24px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+  cursor: pointer;
+}
+
+.category-header__btn--active {
+  color: #6A983C;
+}
+
+.category-header__btn--active .category-header__btn-text {
+  color: #151515;
+}
+
+.category-header__btn-text {
+  margin-left: 5px;
+}
+
+.category-header__products {
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+}
+
+.category-header__products-counter {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 1px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  background-color: #F4F8EC;
+}
+
+.category-header__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.category-header__radios, .category-header__checkboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+}
+
+.category-header__radios-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.category-header__radios-inner:not(:last-child) {
+  margin-right: 18px;
+}
+
+.category-header__radio-chek {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d1d1d1;
+  border-radius: 50%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.category-header__radio-label-input:checked + .category-header__radio-label-check {
+  background-image: url(/img/icon/checked-checkbox.svg);
+}
+
+.category-header__radio-label-check {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.category-header__radio-chekbox:checked + .category-header__radio-chek {
+  background-image: url(/img/icon/checked-radio.svg);
+}
+
+.category-header__radio-label, .category-header__filtre-nbm {
+  position: relative;
+  z-index: 1;
+  margin-left: 10px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.category-header__radio-label::before, .category-header__filtre-nbm::before {
+  position: absolute;
+  z-index: 1;
+  left: -31px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+}
+
+.category-header__checkboxes {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.category-header__checkboxes:not(:last-child) {
+  margin-right: 16px;
+}
+
+.category-header__radio-nbm {
+  margin-left: 8px;
+  padding-left: 8px;
+  border: 1px solid #ebebeb;
+  border-radius: 12px;
+  padding-right: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: transparent;
+}
+
+.category-header__radio-nbm--last {
+  margin-right: 24px;
+}
+
+.category-header__selection {
+  padding-left: 22px;
+  border: none;
+  border-left: 1px solid #d1d1d1;
+  background-color: transparent;
 }
 
 .site-footer {
@@ -3433,9 +3663,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
