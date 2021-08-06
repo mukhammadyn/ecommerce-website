@@ -1,0 +1,33 @@
+.top-section__title{
+  margin: 0;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.top-section__button-span{
+  display: flex;
+  align-items: center;
+}
+
+.top-section__button{
+  border: none;
+  background-color: transparent;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  padding: 0;
+}
+
+.top-section__span{
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../../img/icon/slicking-button.svg);
+}
+
+

@@ -52,7 +52,7 @@ $(document).ready(function(){
       },
       {
         breakpoint: 705,
-        // settings: "unslick", 
+        // settings: "unslick",
         slidesToShow: 0.5,
         slidesToScroll: 1
       }
@@ -60,3 +60,14 @@ $(document).ready(function(){
     ]
   });
 });
+
+
+var elContentSelected = document.querySelectorAll('.content-selected');
+var elContentSelectedButton = document.querySelectorAll('.js-content-btn');
+
+if (elContentSelectedButton) {
+  elContentSelectedButton.addEventListener('click', function(){
+    elContentSelected.classList.add('content-selected--close');
+  })
+
+}

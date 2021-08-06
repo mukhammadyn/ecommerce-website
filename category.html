@@ -131,99 +131,150 @@
           </ul>
         </div>
       </nav>
+
+      <div class="site-header__bottom-links link">
+        <a class="link-one" href="index.html">Homepage</a>
+        <span class="link-span"></span>
+        <a class="link-two" href="#">Fruit and vegetables</a>
+      </div>
     </header>
 
     <main class="site-main">
 
-      <div class="category-hero">
+      <div class="category-section">
+        <div class="category-section__content">
+          <h2 class="category-section__title">
+            Fruit and vegetables
+          </h2>
+          <div class="category-section__buttons">
+            <div class="category-section__button">
+              <button class="category-section__button-one">Grid view</button>
+              <span class="category-section__button-grid"></span>
+            </div>
+            <div class="category-section__button">
+              <button class="category-section__button-two">List view</button>
+              <span class="category-section__button-list"></span>
+            </div>
+            <div class="category-section__number">
+              <p class="category-section__text">Products</p>
+              <span class="category-section__span">117</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <div class="category-hero__header category-header">
-
-          <div class="category-header__links">
-
-            <a href="#" class="category-header__link">Homepage</a>
-            <span>/</span>
-            <a href="#" class="category-header__link category-header__link--active">Fruit and vegetables</a>
-
+      <form class="filtre-form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="filtre-form__choose">
+          <div class="filtre-form__radio radio">
+            <label class="radio-label">
+              <input class="radio-input" type="radio" name="radio">
+              Filtre text
+              <span class="radio-span"></span>
+            </label>
+            <label class="radio-label">
+              <input class="radio-input" type="radio" name="radio">
+              Filtre text
+              <span class="radio-span"></span>
+            </label>
           </div>
 
-          <header class="category-header__header">
-            <h1 class="category-header__heading">Fruit and vegetables</h1>
+          <div class="filtre-form__checkbox checkbox">
+            <label class="checkbox-label">
+              <input class="checkbox-input" type="checkbox" name="check">
+              <span class="checkbox-box"></span>
+              Filtre
+              <span class="checkbox-span">Nbm</span>
+            </label>
+            <label class="checkbox-label">
+              <input class="checkbox-input" type="checkbox" name="check">
+              <span class="checkbox-box"></span>
+              Filtre
+              <span class="checkbox-span">Nbm</span>
+            </label>
+          </div>
 
-            <div class="category-header__styles">
-              <button class="category-header__btn category-header__btn--active">
-                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.333 1.333H2.666c-.736 0-1.333.597-1.333 1.334v10.666c0 .737.597 1.334 1.333 1.334h10.667c.736 0 1.333-.597 1.333-1.334V2.667c0-.737-.597-1.334-1.333-1.334zM1.333 8h13.333M8 1.333v13.334" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <span class="category-header__btn-text">Grid view</span>
-              </button>
+          <div class="filtre-form__checkbox-select select">
+            <label class="checkbox-label__last">
+              <input class="checkbox-input" type="checkbox" name="check">
+              <span class="checkbox-box"></span>
+              Filtre
+              <span class="checkbox-span">12</span>
+            </label>
+            <select class="select-section" name="select" id="select">
+              <option value="all">Select</option>
+              <option value="value1">Value1</option>
+              <option value="value2">Value2</option>
+              <option value="value3">Value3</option>
+              <option value="value4">Value4</option>
+            </select>
+          </div>
+        </div>
 
-              <button class="category-header__btn">
-                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.333 1.333H2.666c-.736 0-1.333.597-1.333 1.334v10.666c0 .737.597 1.334 1.333 1.334h10.667c.736 0 1.333-.597 1.333-1.334V2.667c0-.737-.597-1.334-1.333-1.334zM1.333 4.667h13.333M1.333 8h13.333M1.333 11.333h13.333" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <span class="category-header__btn-text">List view</span>
-              </button>
+        <div class="filtre-form__content content">
+          <p class="content-title">Applied filtres:</p>
+          <div class="content-selected">
+            <p class="content-selected__text">Selected Filtre</p>
+            <button class="content-selected__button js-content-btn" type="button"></button>
+          </div>
+          <div class="content-selected">
+            <p class="content-selected__text">Selected Filtre</p>
+            <button class="content-selected__button js-content-btn" type="button"></button>
+          </div>
+        </div>
 
-              <span class="category-header__products">
-                <span class="category-header__products-counter">117</span>
-                <span class="category-header__products-text">Products</span>
-              </span>
-            </div>
-          </header>
+        <div class="filtre-form__info">
 
-          <form class="category-header__form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="filtre-form__category">
+          <h2 class="filtre-form__category-title">Categories</h2>
+          <div class="filtre-form__category-content">
+            <p class="filtre-form__category-name">Category name</p>
+            <span class="filtre-form__category-span">320</span>
+          </div>
+          <div class="filtre-form__category-content">
+            <p class="filtre-form__category-name">Category name</p>
+            <span class="filtre-form__category-span">320</span>
+          </div>
+          <div class="filtre-form__category-content">
+            <p class="filtre-form__category-name">Category name</p>
+            <span class="filtre-form__category-span">320</span>
+          </div>
+          <div class="filtre-form__category-content">
+            <p class="filtre-form__category-name">Category name</p>
+            <span class="filtre-form__category-span">320</span>
+          </div>
 
-            <div class="category-header__radios">
-
-              <div class="category-header__radios-inner">
-                <input class="category-header__radio-chekbox visually-hidden" id="filtre_text1" type="radio" name="filtre">
-                <span class="category-header__radio-chek"></span>
-                <label class="category-header__radio-label" for="filtre_text1">Filtre text</label>
-              </div>
-
-              <div class="category-header__radios-inner">
-                <input class="category-header__radio-chekbox visually-hidden" id="filtre_text2" type="radio" name="filtre">
-                <span class="category-header__radio-chek"></span>
-                <label class="category-header__radio-label" for="filtre_text2">Filtre text</label>
-              </div>
-
-            </div>
-
-            <div class="category-header__checkboxes">
-
-              <input class="category-header__radio-label-input visually-hidden" type="checkbox" name="filtre" id="filtre_nbm1">
-              <span class="category-header__radio-label-check"></span>
-              <label class="category-header__filtre-nbm" for="filtre_nbm1">Filtre</label>
-              <span class="category-header__radio-nbm">Nbm</span>
-
-            </div>
-
-            <div class="category-header__checkboxes">
-
-              <input class="category-header__radio-label-input visually-hidden" type="checkbox" name="filtre" id="filtre_nbm2">
-              <span class="category-header__radio-label-check"></span>
-              <label class="category-header__filtre-nbm" for="filtre_nbm2">Filtre</label>
-              <span class="category-header__radio-nbm">Nbm</span>
-
-            </div>
-
-            <div class="category-header__checkboxes">
-
-              <input class="category-header__radio-label-input visually-hidden" type="checkbox" name="filtre" id="filtre_nbm3">
-              <span class="category-header__radio-label-check"></span>
-              <label class="category-header__filtre-nbm" for="filtre_nbm3">Filtre</label>
-              <span class="category-header__radio-nbm category-header__radio-nbm--last">12</span>
-
-              <select class="category-header__selection" name="Select" id="selection">
-                <option value="" selected disabled>Select</option>
-                <option value="option1">Option1</option>
-                <option value="option2">Option2</option>
-                <option value="option3">Option3</option>
-              </select>
-            </div>
-
-          </form>
+          <div class="filtre-form__brends brend">
+            <h2 class="brend-title">
+              Brands
+            </h2>
+            <label class="brend-label">
+              <input class="brend-input" type="checkbox" name="check">
+              Filtre by brand item
+            </label>
+            <label class="brend-label">
+              <input class="brendi-input" type="checkbox" name="check">
+              Filtre by brand item
+            </label>
+            <label class="brend-label">
+              <input  class="brendi-input" type="checkbox" name="check">
+              Filtre by brand item
+            </label>
+            <label class="brend-label">
+              <input  class="brendi-input" type="checkbox" name="check">
+              Filtre by brand item
+            </label>
+            <label class="brend-label">
+              <input  class="brendi-input" type="checkbox" name="check">
+              Filtre by brand item
+            </label>
+          </div>
 
         </div>
 
-      </div>
+
+        </div>
+
+      </form>
 
     </main>
 

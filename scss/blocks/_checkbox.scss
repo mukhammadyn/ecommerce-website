@@ -1,0 +1,47 @@
+/* CHECKBOX */
+
+.checkbox-label{
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 9px 16px;
+  padding-left: 35px;
+  margin-right: 16px;
+}
+
+
+
+.checkbox-span{
+  margin-left: 16px;
+  border: 1px solid #EBEBEB;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.checkbox-input{
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkbox-box{
+  position: absolute;
+  margin-left: -28px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../img/icon/checkbox-off.svg);
+}
+
+.checkbox-input:checked + .checkbox-box{
+  background-image: url(../../img/icon/checkbox-on.svg);
+}

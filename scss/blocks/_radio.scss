@@ -1,0 +1,35 @@
+/* RADIO */
+.radio{
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 9px 16px;
+}
+
+.radio-label:not(:last-child){
+  margin-right: 16px;
+}
+
+.radio-label{
+  padding-left: 20px;
+}
+
+.radio-input{
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio-span{
+  position: absolute;
+  margin-left: -100px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../img/icon/radio-circle.svg);
+}
+
+.radio-input:checked + .radio-span{
+  background-image: url(../../img/radio-full-button.svg);
+}

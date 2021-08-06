@@ -10,8 +10,10 @@
 @import "search-modal";
 @import "site-header__nav";
 @import "site-nav";
+@import "site-header__bottom-links";
+@import "link";
+
 // MAIN
-@import "category-menu";
 @import "index-filter";
 @import "cards-group";
 
@@ -20,15 +22,17 @@
 @import "link-buy-now";
 
 @import "slicking-section";
-@import "slicking";
-@import "slick-slider";
+@import "top-section";
 
 @import "best-from-farmers";
 
 @import "section-headline";
-
-@import "category-hero";
-@import "category-header";
+@import "category-section";
+@import "filtre-form";
+@import "radio";
+@import "checkbox";
+@import "select";
+@import "content";
 // FOOTER
 @import "site-footer";
 @import "footer-top";
